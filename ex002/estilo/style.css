@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  h1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.fundos{
+    background-color: #111111;
+    border-radius: 4px;
+    padding: 25px;
+    margin: 30px;
+}
+
+.fundos > h2{
+    color: white;
+}
+
+.fundos > p{
+    color: #B2B2B2;
+}
+
+.fundos > h2 > p, span{
+    color:#FEBE01;
+}
+
+.botao{
+    background-color: #FEBE01;
+    width: max-content;
+    padding: 10px;
+    border-radius: 4px;
+}
