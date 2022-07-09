@@ -28,6 +28,11 @@ body{
     color:#FEBE01;
 }
 
+a{
+    text-decoration: none;
+    color: #111111;
+}
+
 .botao{
     background-color: #FEBE01;
     width: max-content;
