@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    display: grid;
+    font-family: arial;
+    background-color: #f7f7f7;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    max-width: 1000px;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 1rem 1.5rem;
+    border-radius: 0.2rem;
+    list-style: none;
+    text-transform: uppercase;
+}
+article{
+    padding: 40px;
+    margin-top: 0px;
+}
+
+footer{
+    margin-top: 4rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+}
+
+.titulo{
+    margin: auto;
+    display: block;
+    margin-top: 4rem;
+}
+
+.menu{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 4rem 0rem;
+    list-style: none;
+}
+
+.menu a:hover{
+    border: 2px solid red;
+}
+
+.intro{
+    background-color: white;
+    display: grid;
+    padding: 60px;
+    margin: auto;
+    align-content: center;
+    justify-items: end;
+    text-align: right;
+    position: relative;
+}
+
+
+.intro::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    width: 60px;
+    height: 5px;
+    background-color: #EE2211;
+    z-index: relative;
+}
+
+
+.imgbike{
+    max-width: 100%;
+    display: block;
+
+}
+
+.botao{ 
+    background-color: #EE2211;
+    color: white;
+    
+}
+
+.botao:hover{
+    background-color: #900;
+}
+
+.vantagens{
+    font-size: 4rem;
+    text-align: right;
+    text-transform: uppercase;
+    color: #C5C5C5;
+    padding: 4rem;
+}
+
+.descricoes{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 400px;
+}
+
+.descricoes img{
+    padding: 18px 0px;
+}
+
+.vantagem-descri{
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+.vantagem-descri:nth-child(odd){
+    background-color: #f7f7f7;
+}
+
+.vantagem-descri:hover{
+    border-left: 3px solid red;
+}
