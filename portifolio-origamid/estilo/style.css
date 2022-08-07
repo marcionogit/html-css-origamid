@@ -1,0 +1,185 @@
+@charset    "UTF-8";
+
+/*
+azul claro: #79A5CF
+letras: #173756*
+
+
+
+
+/*Fonte Meio */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/*Fonte body*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+header{
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    position: center;
+
+}
+
+p{
+    font-size: 20px;
+}
+
+#logo{
+    color: #173756;
+
+}
+
+.cabecalho{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+    place-content: center;
+    margin-top: 35px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #173756;
+    padding: 0px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.bio{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.info-bio{
+    padding-left: 60px;
+}
+
+.bio img{
+    border-radius: 100%;
+}
+
+.bio h1{
+    font-weight: 600;
+    font-size: 4rem;
+    color: #173756;
+    margin-bottom: -10px;
+}
+
+.bio h2{
+    font-family: 'Roboto', sans-serif;
+    color: #838383;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.bio p{
+    font-size: 32px;
+    padding-top: 50px;
+    max-width: 400px;
+    line-height: 38px;
+    color: #343434;
+}
+
+.enfeite{
+    margin: auto;
+    display: block;
+    background-color: #F1971B;
+    max-width: 450px;
+    height: 3px;
+    border: 1px solid transparent;
+    margin-top: 30px;
+}
+
+
+aside{
+    background-color: #173756;
+    margin: -10px;
+    max-width: 100vw;
+}
+
+.projetos{
+    max-width: 1000px;
+    margin-top: 73px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+
+#projeto{
+    padding: 0px;
+    margin: 0px;
+    font-size: 9em;
+    font-weight: bolder;
+    padding-left: 50px;
+    color: #FFD480;
+}
+
+.projetos p{
+    padding-bottom: 50px;
+    max-width: 400px;
+    line-height: 38px;
+    color: #343434;
+    font-size: 24px;
+}
+
+.projetos h3{
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 0;
+    color: #173756;
+}
+
+
+.formacao{ 
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.largura{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+}
+
+.largura img{
+    max-width: 100%;
+    margin-top: -40px;
+}
+
+#formacao{
+    color: #05192C;
+    font-size: 7em;
+    font-weight: bolder;
+    padding-left: 30px;
+}
+
