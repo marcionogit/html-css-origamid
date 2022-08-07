@@ -15,7 +15,7 @@ letras: #173756*
 
 body{
     font-family: 'Roboto', sans-serif;
-    padding: 0px;
+   margin: 0px;
 }
 
 header{
@@ -120,8 +120,6 @@ p{
 
 aside{
     background-color: #173756;
-    margin: -10px;
-    
     max-width: 100vw;
     padding-bottom: 50px;
 }
@@ -242,16 +240,41 @@ footer{
 
 .contatos{
     display: grid;
-    grid-template-columns: 30px 1fr;
+    grid-template-columns: auto 1fr;
     gap: 20px;
+    padding-left: 50px;
+    padding-top: 40px;
+}
+
+.detalhes p{
+    padding-top: 100px;
+    max-width: 350px;
+    color: #CCE5FD;
+    padding-left: 30px;
 }
 
 .contatos img{
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 38px;
+    height: 39px;
+    margin: auto;
+}
+
+#celular{
+    width: 30px;
+}
+
+#email{
+    width: 100%;
+    height: 30px;
 }
 
 #foto-alguma{
     margin-top: 10px;
+}
+
+.contatos a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #CCE5FD;
+    font-size: 25px;
 }
