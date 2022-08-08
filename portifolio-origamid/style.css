@@ -37,6 +37,10 @@ p{
     font-size: 20px;
 }
 
+a{
+    text-decoration: none;
+}
+
 #logo{
     color: #173756;
     width: 300px;
@@ -64,6 +68,11 @@ p{
     font-weight: 600;
     font-size: 20px;
     display: inline-block;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    color: #173756;
 }
 
 .bio{
@@ -152,6 +161,12 @@ p{
     font-size: 32px;
     margin-bottom: 0;
     color: #173756;
+    border-left: 4px solid transparent;
+}
+
+.projetos h3:hover{
+    border-left: 4px solid #F1971B;
+
 }
 
 aside{
