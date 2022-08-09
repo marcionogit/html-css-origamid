@@ -92,8 +92,6 @@ a{
     border-radius: 100%;
     object-fit: cover;
     position: center;
-    object-fit: cover;
-    position: center;
 }
 
 .bio h1{
@@ -368,11 +366,6 @@ footer img{
         color: #173756;
         margin-bottom: -10px;
     }
-
-    .bio img{
-        width: 100%;
-        border-radius: 100%;
-    }
     
     
     .projetos p{
@@ -455,3 +448,83 @@ footer img{
         font-size: 20px;
     }
 }
+
+
+@media (max-width: 750px) and (min-width: 0px){
+    .bio h1{
+        font-weight: 600;
+        font-size: 2rem;
+        color: #173756;
+        margin-bottom: -10px;
+    }
+
+    .bio h2{
+        font-family: 'Roboto', sans-serif;
+        color: #838383;
+        font-weight: 200;
+        font-size: 15px;
+    }
+
+    .bio p{
+        font-size: 22px;
+        padding-top: 50px;
+        max-width: 400px;
+        line-height: 28px;
+        color: #343434;
+    }
+
+    .projetos p{
+        padding-bottom: 50px;
+        max-width: 400px;
+        line-height: 28px;
+        color: #343434;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 0px){
+
+    #logo{
+        color: #173756;
+        width: 300px;
+        margin: auto;
+        padding-left: 70px;
+    }
+
+    .cabecalho{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 0px;
+    }
+
+    .menu{
+        justify-content: center;
+        margin-top: 35px;
+        padding-left: 0px;
+    }
+
+    .projetos{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .info-bio{
+        padding-left: 0px;
+    }
+
+    .bio{
+        text-align: center;
+        grid-template-columns: 1fr ;
+    }
+
+    .bio img{
+        max-width: 400px;
+        
+    }
+
+    #projeto{
+        padding-left: 0px;
+        color: #FFD480;
+    }
+}
+
