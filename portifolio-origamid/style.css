@@ -238,6 +238,13 @@ aside{
     padding-left: 30px;
 }
 
+#formacao-mobile{
+    display: none;
+    color: #05192C;
+    font-size: 5em;
+    font-weight: bolder;
+}
+
 
 footer{
     background-color: #05192C;
@@ -472,8 +479,13 @@ footer img{
     }
 
     #formacao{
+        display: none;
         padding-left: 0px;
         margin: 0 auto;
+    }
+
+    #formacao-mobile{
+        display: inline;
     }
 
     #alinhando{
@@ -543,6 +555,10 @@ footer img{
         
     }
 
+    aside{
+        padding-left: 20px;
+    }
+
     #projeto{
         padding-left: 0px;
         color: #FFD480;
@@ -570,7 +586,11 @@ footer img{
 
     .cursos span{
         font-size: 24px;
+    }
 
+    #formacao-mobile{
+        font-size: 4em;
+        text-align: center;
     }
 
 
@@ -598,10 +618,27 @@ footer img{
         font-size: 20px;
         
     }
-}
-@media (max-width: 450px) and (min-width: 0px){
+
+    #formacao-mobile{
+        font-size: 3em;
+        text-align: center;
+    }
+
     .contatos a{
         font-size: 16px;
+    }
+}
+@media (max-width: 350px) and (min-width: 0px){
+    .bio p{
+        font-size: 20px;
+    }
+
+    .projetos p{
+        font-size: 17px;
+    }
+
+    .largura p{
+        font-size: 18px;
     }
 }
 
