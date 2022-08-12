@@ -1,13 +1,7 @@
 @charset    "UTF-8";
 
-/*
-azul claro: #79A5CF
-letras: #173756*
 
-
-
-
-/*Fonte Meio */
+/*Fonte dos titulos */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 /*Fonte body*/
@@ -18,19 +12,12 @@ body{
    margin: 0px;
 }
 
-header{
-    max-width: 1000px;
-    margin: auto;
-}
-
-
 h1, h2, h3, h4{
     font-family: 'Poppins', sans-serif;
 }
 
 img{
     display: block;
-
 }
 
 p{
@@ -41,6 +28,12 @@ a{
     text-decoration: none;
 }
 
+header{
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*Meu nome em forma de logotipo / Cabeçalho */
 #logo{
     color: #173756;
     width: 300px;
@@ -49,7 +42,7 @@ a{
 .cabecalho{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 50px;
+    margin-left: 30px;
 }
 
 .menu{
@@ -75,6 +68,12 @@ a{
     color: #173756;
 }
 
+
+
+
+
+/*Resumo de quem sou eu / Introdução*/
+
 .bio{
     max-width: 100%;
     display: grid;
@@ -83,7 +82,7 @@ a{
 }
 
 .info-bio{
-    padding-left: 60px;
+    margin-left: 60px;
 }
 
 #location{
@@ -121,6 +120,9 @@ a{
     color: #343434;
 }
 
+
+/*Separador / Enfeite */
+
 .enfeite{
     margin: auto;
     display: block;
@@ -131,8 +133,6 @@ a{
     margin-top: 30px;
 }
 
-
-
 .projetos{
     max-width: 1000px;
     margin-top: 73px;
@@ -141,12 +141,12 @@ a{
     margin: 0 auto;
 }
 
+/*Titulo "PROJETOS"*/
+
 #projeto{
-    padding: 0px;
-    margin: 0px;
+    margin: 0px 0px 0px 50px;
     font-size: 9em;
     font-weight: bolder;
-    padding-left: 50px;
     color: #FFD480;
 }
 
@@ -159,7 +159,8 @@ a{
 }
 
 .projetos h3{
-    padding-left: 30px;
+    margin-left: 20px;
+    padding-left: 10px;
     font-weight: 400;
     font-size: 32px;
     margin-bottom: 0;
@@ -169,8 +170,13 @@ a{
 
 .projetos h3:hover{
     border-left: 4px solid #F1971B;
-
 }
+
+
+
+
+
+/*Usei o aside para agrupar todo o gride com as minhas formações e também para conseguir adicionar uma cor ao fundo*/
 
 aside{
     background-color: #173756;
@@ -179,10 +185,27 @@ aside{
     padding-left: 50px;
 }
 
+/*Titulo "Formação" com quebra de linha*/
+#formacao{
+    color: #05192C;
+    font-size: 7em;
+    font-weight: bolder;
+    padding-left: 30px;
+}
+
+/*Esse é o titulo "Formação" sem a quebra de linha*/
+#formacao-mobile{
+    display: none;
+    color: #05192C;
+    font-size: 5em;
+    font-weight: bolder;
+}
+
 .formacao{ 
     display: grid;
 }
 
+/*Fiz essa classe largura, para conseguir dar um limite ao tamanho do conteúdo do aside sem descolar o background*/
 .largura{
     max-width: 1000px;
     margin: 0 auto;
@@ -225,12 +248,12 @@ aside{
     font-size: 24px;
     max-width: 350px;
     color: #000911;
-    padding-left: 30px;
+    margin-left: 30px;
 }
 
 .cursos{
-    padding-top: 55px;
-    padding-left: 50px;
+    margin-top: 55px;
+    margin-left: 50px;
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
@@ -243,22 +266,11 @@ aside{
     font-size: 34px;
     border-radius: 4px;
 }
-
-#formacao{
-    color: #05192C;
-    font-size: 7em;
-    font-weight: bolder;
-    padding-left: 30px;
-}
-
-#formacao-mobile{
-    display: none;
-    color: #05192C;
-    font-size: 5em;
-    font-weight: bolder;
-}
+ 
 
 
+
+/*Rodapé do Site*/
 footer{
     background-color: #05192C;
     padding: 40px 0px;
@@ -268,7 +280,6 @@ footer img{
     width: 100%;
 }
 
-
 .detalhes{
     max-width: 1000px;
     display: grid;
@@ -276,12 +287,11 @@ footer img{
     margin: auto;
 }
 
-
 .detalhes p{
-    padding-top: 100px;
+    margin-top: 100px;
     max-width: 350px;
     color: #CCE5FD;
-    padding-left: 30px;
+    margin-left: 30px;
 }
 
 .contatos{
@@ -289,8 +299,8 @@ footer img{
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 20px;
-    padding-left: 50px;
-    padding-top: 40px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 .contatos a:hover{
@@ -303,16 +313,6 @@ footer img{
     margin: auto;
 }
 
-#foto-alguma{
-    margin-top: 10px;
-    grid-column: 2;
-}
-
-#foto-footer{
-    display: none;
-    max-width: 450px;
-}
-
 .contatos a{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -320,7 +320,22 @@ footer img{
     font-size: 25px;
 }
 
+/*IMAGEM PARA TELA GRANDE*/
+#foto-alguma{
+    margin-top: 10px;
+    grid-column: 2;
+}
 
+/*IMAGEM TELAS PEQUENAS*/
+#foto-footer{
+    display: none;
+    max-width: 450px;
+}
+
+
+
+
+/*Para telas menores 1020 pixels*/
 
 @media (max-width: 1020px) and (min-width: 900px){
 
@@ -337,12 +352,12 @@ footer img{
         width: 100%;
     }
 
+/*alinhamento da imagem e do titulo formação dentro do aside*/
 
     #alinhando{
         padding-left: 40px;
     }
     
-
     #formacao{
         color: #05192C;
         font-size: 8em;
@@ -353,46 +368,31 @@ footer img{
 
 
 
-
+/*Para telas menores 900 pixels*/
 
 @media (max-width: 900px) and (min-width: 0px){
 
 
     .cabecalho{
-        display: grid;
         grid-template-columns: 180px 1fr;    
     }
     
     .menu{
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
         gap: 0px;
         justify-content: end;
-        margin-top: 35px;
     }
 
     .bio p{
         font-size: 24px;
-        padding-top: 50px;
-        max-width: 400px;
         line-height: 28px;
-        color: #343434;
     }
 
     .bio h1{
-        font-weight: 600;
         font-size: 3rem;
-        color: #173756;
-        margin-bottom: -10px;
     }
     
-    
     .projetos p{
-        padding-bottom: 50px;
-        max-width: 400px;
         line-height: 28px;
-        color: #343434;
         font-size: 20px;
     }
 
@@ -400,13 +400,9 @@ footer img{
         display: grid;
         place-content: center;
         font-size: 5em;
-        font-weight: bolder;
-        
-        color: #FFD480;
     }
+
     .largura{
-        margin: 0 auto;
-        display: grid;
         grid-template-columns: 1fr 1fr;
     }
     
@@ -418,93 +414,61 @@ footer img{
 
     .largura p{
         font-size: 20px;
-        max-width: 350px;
-        color: #000911;
-        padding-left: 30px;
     }
 
     .largura h3{
         font-size: 25px;
-        font-weight: 500;
-        color: #79A5CF;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        padding-top: 30px;
-        border-top: 3px solid #09243F;
     }
 
     .cursos span{
-        display: grid;
-        background-color: #79A5CF;
-        padding: 5px 10px;
         font-size: 24px;
-        border-radius: 4px;
     }
 
     #formacao{
-        color: #05192C;
         font-size: 5em;
-        font-weight: bolder;
-        padding-left: 30px;
     }
 
     #alinhando{
-        padding-left: 40px;
+        margin-left: 40px;
     }
 
-
     .detalhes p{
-        padding-top: 100px;
-        max-width: 350px;
-        color: #CCE5FD;
-        padding-left: 50px;
+        margin-left: 50px;
         font-size: 18px;
     }
 
     .contatos a{
-        font-family: 'Poppins', sans-serif;
-        text-decoration: none;
-        color: #CCE5FD;
         font-size: 20px;
     }
 }
 
 
+
+
+/*Para telas menores 750 pixels*/
+
 @media (max-width: 750px) and (min-width: 0px){
+
     .bio h1{
-        font-weight: 600;
         font-size: 2rem;
-        color: #173756;
-        margin-bottom: -10px;
     }
 
     .bio h2{
-        font-family: 'Roboto', sans-serif;
-        color: #838383;
-        font-weight: 200;
         font-size: 15px;
     }
 
     .bio p{
         font-size: 22px;
-        padding-top: 50px;
-        max-width: 400px;
         line-height: 28px;
-        color: #343434;
     }
 
     .projetos p{
-        padding-bottom: 50px;
-        max-width: 400px;
         line-height: 28px;
-        color: #343434;
         font-size: 19px;
     }
 
     #formacao{
         display: none;
-        padding-left: 0px;
-        margin: 0 auto;
     }
 
     #formacao-mobile{
@@ -513,7 +477,7 @@ footer img{
 
     #alinhando{
         grid-template-columns: 1fr;
-        padding-left: 0px;
+        margin: auto;
     }
 
     .largura img{
@@ -526,6 +490,7 @@ footer img{
     }
 
     .detalhes p{
+        margin: auto;
         font-size: 24px;
         text-align: center;
     }
@@ -541,24 +506,25 @@ footer img{
 
 }
 
+
+
+
+/*Para telas menores 600 pixels*/
+
 @media (max-width: 600px) and (min-width: 0px){
 
     #logo{
-        color: #173756;
-        width: 300px;
         margin: auto;
         text-align: center;
     }
 
     .cabecalho{
-        display: grid;
         grid-template-columns: 1fr;
-        padding-left: 0px;
+        margin-left: 0px;
     }
 
     .menu{
         justify-content: center;
-        margin-top: 35px;
         padding-left: 0px;
     }
 
@@ -570,11 +536,15 @@ footer img{
 
     .projetos h3{
         text-align: center;
-        padding-left: 0px;
+        margin-left: 0px;
     }
 
     .info-bio{
-        padding-left: 0px;
+        margin-left: 0px; 
+    }
+
+    .info-bio p{
+        margin: 0 auto; 
     }
 
     .bio{
@@ -583,8 +553,7 @@ footer img{
     }
 
     .bio img{
-        max-width: 400px;
-        
+        max-width: 400px; 
     }
 
     aside{
@@ -592,8 +561,7 @@ footer img{
     }
 
     #projeto{
-        padding-left: 0px;
-        color: #FFD480;
+        margin-left: 0px;
     }
 
     .detalhes p{
@@ -602,17 +570,15 @@ footer img{
 
     .largura h4{
     font-size: 16px;
-
+    margin-left: 0px;
     }
 
     .largura p{
         font-size: 20px;
-        padding-left: 0px;
+        margin-left: 0px;
     }
 
     .cursos{
-        display: flex;
-        flex-wrap: wrap;
         gap: 20px;
     }
 
@@ -624,24 +590,26 @@ footer img{
         font-size: 4em;
         text-align: center;
     }
-
-
 }
+
+
+
+
+/*Para telas menores 450 pixels*/
+
 @media (max-width: 450px) and (min-width: 0px){
 
     aside{
-        padding-left: 10px;
+        padding-left: 5px;
     }
 
     .largura{
         grid-template-columns:1fr;
         place-items: center;
         text-align: center;
-  
     } 
 
     .largura h3{
-        color: #79A5CF;
         border-top: none;
         padding-top: 0px;
         margin-top: 0px;
@@ -650,7 +618,7 @@ footer img{
     .cursos{
         padding: 0px 0px 10px 0px;
         margin-bottom: 150px;
-
+        margin-left: 0px;
     }
 
     .cursos span{
@@ -667,7 +635,15 @@ footer img{
         font-size: 16px;
     }
 }
+
+
+
+
+
+/*Para telas menores 350 pixels*/
+
 @media (max-width: 350px) and (min-width: 0px){
+
     .bio p{
         font-size: 20px;
     }
@@ -678,6 +654,10 @@ footer img{
 
     .largura p{
         font-size: 18px;
+    }
+
+    .contatos{
+        margin-left: 20px;
     }
 }
 
