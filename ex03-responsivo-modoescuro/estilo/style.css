@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+
+:root{
+    /*cores*/
+    --fundo:#f7f7f7;
+    --fundo-textos:#ffffff;
+    --cor-letras:black;
+    --cor-vermelha: red;
+    --cor-vermelha-escura:#990000;
+}
+
+@media (prefers-color-scheme:dark){
+    :root{
+        /*cores*/
+        --fundo:#111111;
+        --fundo-textos:#222222;
+        --cor-letras:white;
+    }
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 0px auto;
+    background-color: var(--fundo);
+    color: var(--cor-letras);
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+article{
+    background-color: var(--fundo-textos);
+    padding: 40px;
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+}
+
+#titulo{
+    display: block;
+    margin:auto;
+    padding: 60px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.menu a{
+    background-color: var(--fundo-textos);
+    border: 2px solid transparent;
+    color: var(--cor-letras);
+    display: inline-block;
+}
+
+.menu a:hover{
+    border-color: var(--cor-vermelha);
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--fundo-textos);
+}
+
+.textos{
+    display:grid;
+    padding: 40px;
+    align-content: center;
+    justify-items: end;
+    text-align: right;
+}
+
+.textos h1{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+.botao{
+    background-color: var(--cor-vermelha);
+    color: var(--fundo-textos);
+    color: var(--cor-letras);
+}
+
+.botao:hover{
+    background-color: var(--cor-vermelha-escura);
+}
+
+.intro img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: left;
+}
+
+.intro-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titulo-van{
+    color: #C5C5C5;
+    font-size: 40px;
+    text-align: right;
+    padding: 40px;
+    margin: auto;
+}
+
+.vantagens-descricoes{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    border-left: 3px solid transparent;
+}
+
+.vantagens-descricoes img{
+    padding: 22px 10px;
+}
+
+.vantagens-descricoes:hover{
+    border-color: var(--cor-vermelha);
+}
+
+@media (max-width:800px) and (min-width:700px){
+    .intro-2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-van{
+        color: #C5C5C5;
+        font-size: 60px;
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+    }
+}
+
+@media (max-width:700px) and (min-width:249px){
+    
+    .intro{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: var(--fundo-textos);
+    }
+
+    .textos{
+        display:grid;
+        padding: 40px;
+        align-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .intro img{
+        width: 500px;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .intro-2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-van{
+        color: #C5C5C5;
+        font-size: 60px;
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+    }
+}
+
+@media (max-width:650px) and (min-width:430px){
+
+
+    .textos{
+        display:grid;
+        padding: 40px;
+        align-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .intro img{
+        width: 500px;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .intro-2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-van{
+        color: #C5C5C5;
+        font-size: 40px;
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+    }
+}
+
+@media (max-width:430px) and (min-width:249px){
+    
+
+
+    .textos{
+        display:grid;
+        padding: 40px;
+        align-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .intro img{
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .intro-2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-van{
+        color: #C5C5C5;
+        font-size: 40px;
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+    }
+}
